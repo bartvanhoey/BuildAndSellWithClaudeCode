@@ -14,7 +14,12 @@
       "Bash(python tools/generate_infographic.py --spec .tmp/infographic_specs/iran-war/timeline.json --output .tmp/infographics/iran-war/timeline.svg)",
       "Bash(python tools/generate_infographic.py --spec .tmp/infographic_specs/iran-war/asymmetric_strategy.json --output .tmp/infographics/iran-war/asymmetric_strategy.svg)",
       "Bash(python tools/generate_infographic.py --spec .tmp/infographic_specs/iran-war/goals_comparison.json --output .tmp/infographics/iran-war/goals_comparison.svg)",
-      "Bash(python tools/send_newsletter.py --html archive/2026-03-18_iran-war/2026-03-18_iran-war.html --to bartvanhoey@hotmail.com --subject \"Day 18: What the Iran War Is Really About — And How It Ends\" --receipt .tmp/receipts/2026-03-18_iran-war.json)"
+      "Bash(python tools/send_newsletter.py --html archive/2026-03-18_iran-war/2026-03-18_iran-war.html --to bartvanhoey@hotmail.com --subject \"Day 18: What the Iran War Is Really About — And How It Ends\" --receipt .tmp/receipts/2026-03-18_iran-war.json)",
+      "Bash(pip --version)",
+      "Bash(python tools/upload_to_drive.py --file \".tmp/competitor_report_2026-03-19.pdf\")",
+      "Bash(python tools/assemble_report_data.py --file .tmp/report_draft.json)",
+      "Bash(python tools/generate_pdf.py)",
+      "Bash(python tools/upload_to_drive.py --file \".tmp/competitor_report_2026-03-19.pdf\" --folder-id \"1K9UaW5mvESNrs_IX0XCxFnn7TSzhDvxd\")"
     ]
   }
 }

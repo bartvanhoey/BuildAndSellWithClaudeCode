@@ -1,0 +1,9 @@
+anthropic
+python-dotenv
+requests
+beautifulsoup4
+Pillow
+google-api-python-client
+google-auth-oauthlib
+google-auth-httplib2
+lxml

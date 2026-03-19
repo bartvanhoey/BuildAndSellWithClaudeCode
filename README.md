@@ -53,6 +53,8 @@ Chapter 24: Monetizing your Knowledge
 
 **Key**: [Key](https://key.ai/) helps communities unlock their potential. It offers a unique approach to creating meaningful professional connections and fostering career development, financial wellbeing and work-life balance.
 
+**Serper**: An AI-powered search engine that provides real-time access to information from the web. It allows you to quickly find relevant information and insights, making it easier to build AI applications that require up-to-date data.
+
 ## WAT Framework
 
 **Agent**: The AI entity that executes the workflows and interacts with tools to accomplish tasks.
