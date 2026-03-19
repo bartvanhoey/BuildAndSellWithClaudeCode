@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 18: What the Iran War Is Really About — And How It Ends</title>
+  <style>
+/* default.css — Brand-aligned newsletter template
+   Colors: brand primary green (#093824) + terracotta accent (#c0652a)
+   Typography: Montserrat (headings) + Source Sans Pro (body)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  /* Brand primaries */
+  --accent:          #093824;   /* brand green base */
+  --accent-mid:      #7fb9a6;   /* primary-300 — mid green */
+  --accent-light:    #eef7f3;   /* primary-50 — light green tint */
+  --accent-border:   #b3d6c7;   /* primary-200 */
+
+  /* Terracotta secondary */
+  --secondary:       #c0652a;
+  --secondary-light: #fbf2ec;
+
+  /* Neutrals */
+  --text-primary:    #101828;   /* brand black */
+  --text-secondary:  #475467;   /* gray-600 */
+  --text-muted:      #667085;   /* gray-500 */
+  --bg-body:         #f9fafb;   /* gray-50 */
+  --bg-card:         #ffffff;
+  --border:          #e4e7ec;   /* gray-200 */
+  --border-light:    #f2f4f7;   /* gray-100 */
+
+  /* Typography */
+  --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body:    'Source Sans 3', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--bg-body);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Wrapper ── */
+.email-wrapper {
+  max-width: 640px;
+  margin: 32px auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(9,56,36,.08);
+}
+
+/* ── Header ── */
+.email-header {
+  background: var(--accent);
+  padding: 40px 40px 32px;
+  text-align: left;
+  position: relative;
+}
+
+/* Decorative right-edge accent strip */
+.email-header::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 8px;
+  height: 100%;
+  background: var(--secondary);
+}
+
+.email-header .brand {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent-mid);
+  margin-bottom: 14px;
+}
+
+.email-header h1 {
+  font-family: var(--font-heading);
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0;
+  max-width: 520px;
+}
+
+.email-header .issue-meta {
+  font-family: var(--font-body);
+  color: rgba(255,255,255,.55);
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+/* ── Intro ── */
+.email-intro {
+  padding: 32px 40px 24px;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--accent-light);
+}
+
+/* ── Section ── */
+.email-section {
+  padding: 28px 40px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.email-section h2 {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Bullet dot before section titles — matches brand guideline style */
+.email-section h2::before {
+  content: '●';
+  color: var(--accent);
+  font-size: 10px;
+}
+
+.email-section p {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.email-section p:last-child { margin-bottom: 0; }
+
+/* ── Infographic container ── */
+.infographic-wrap {
+  margin: 20px 0;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.infographic-wrap svg { display: block; width: 100%; height: auto; }
+
+/* ── Key stats strip ── */
+.stats-strip {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.stat-item {
+  flex: 1;
+  padding: 20px 16px;
+  text-align: center;
+  background: var(--accent-light);
+  border-right: 1px solid var(--accent-border);
+}
+
+.stat-item:last-child { border-right: none; }
+
+.stat-item .stat-value {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--accent);
+  display: block;
+}
+
+.stat-item .stat-label {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-top: 4px;
+  display: block;
+}
+
+/* ── Conclusion ── */
+.email-conclusion {
+  padding: 28px 40px;
+  border-bottom: 1px solid var(--border-light);
+  background: var(--accent-light);
+}
+
+.email-conclusion p {
+  font-family: var(--font-body);
+  line-height: 1.75;
+  margin-bottom: 14px;
+  color: var(--text-primary);
+}
+
+.email-conclusion p:last-child { margin-bottom: 0; }
+
+/* ── CTA ── */
+.cta-block {
+  text-align: center;
+  padding: 28px 40px 36px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--secondary);
+  color: #ffffff !important;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: 13px 32px;
+  border-radius: 4px;
+}
+
+/* ── Sources ── */
+.sources-block {
+  padding: 20px 40px;
+  background: var(--bg-body);
+  border-top: 1px solid var(--border);
+}
+
+.sources-block h3 {
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.sources-block ol { padding-left: 18px; margin: 0; }
+
+.sources-block li {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.sources-block a { color: var(--accent); text-decoration: none; }
+
+/* ── Footer ── */
+.email-footer {
+  padding: 18px 40px;
+  text-align: center;
+  background: var(--accent);
+}
+
+.email-footer p {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: rgba(255,255,255,.45);
+  margin-bottom: 2px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+
+    <div class="email-header">
+      <span class="brand">Newsletter</span>
+      <h1>Day 18: What the Iran War Is Really About — And How It Ends</h1>
+      <span class="issue-meta">March 18, 2026</span>
+    </div>
+
+    <div class="email-intro">
+      <p>Eighteen days ago, the United States and Israel launched a joint military campaign against Iran. Since then, rescuers have been sifting through rubble in Tehran. Iranian missiles have struck near Tel Aviv. Formula 1 has cancelled its Bahrain and Saudi Arabia races. And Donald Trump is telling the world to keep the Strait of Hormuz open — a sign that the economic pressure is already being felt far beyond the battlefield.</p>
+<p>The headlines are moving fast. But beneath the daily strike updates and missile counts, there is a slower, more consequential story unfolding — one about two sides fighting for entirely different things, on a timeline only one of them controls.</p>
+<p>This edition cuts through the noise. Here is what is actually happening, why Iran may be better positioned than it appears, and what the three most likely endings look like.</p>
+    </div>
+
+  <div class="email-section">
+    <h2>How We Got Here</h2>
+    <p>The fuse for this conflict was lit long before the first strike on March 1. The 2018 US withdrawal from the JCPOA nuclear deal set Iran on a path of gradual enrichment escalation. By 2025, analysts concluded Iran had crossed the nuclear threshold — not a weapon, but the capability to build one within weeks. That assessment changed the calculus in both Washington and Jerusalem.</p>
+<p>The October 2023 Hamas attacks accelerated the timeline. As Israel dismantled Hamas in Gaza and struck Hezbollah in Lebanon, Iran's proxy network — the so-called Axis of Resistance — was systematically degraded. With its forward shield weakened, Tehran was more exposed than at any point in forty years.</p>
+<p>On March 1, 2026, the US and Israel acted. The opening strikes targeted nuclear facilities, air defence systems, and senior military leadership. Israel has since confirmed the killing of multiple top Iranian officials. Iran's response — ballistic missile strikes causing widespread damage near Tel Aviv — confirmed the war is now bilateral and direct.</p>
+    <div class="infographic-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" width="560" height="160">
+  <rect width="560" height="160" rx="8" fill="#f9fafb"/>
+  <line x1="60.0" y1="80" x2="500.0" y2="80" stroke="#093824" stroke-width="2" opacity="0.3"/>
+  <text x="280" y="24" font-family="sans-serif" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">The Road to War</text>
+  <circle cx="60.0" cy="80" r="10" fill="#093824"/>
+  <text x="60.0" y="62" font-family="sans-serif" font-size="13" font-weight="700" fill="#093824" text-anchor="middle">2015</text>
+  <text x="60.0" y="100" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">Iran nuclear</text>
+  <text x="60.0" y="118" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">deal signed</text>
+  <text x="60.0" y="136" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">(JCPOA)</text>
+  <circle cx="148.0" cy="80" r="10" fill="#093824"/>
+  <text x="148.0" y="62" font-family="sans-serif" font-size="13" font-weight="700" fill="#093824" text-anchor="middle">2018</text>
+  <text x="148.0" y="100" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">Trump</text>
+  <text x="148.0" y="118" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">withdraws</text>
+  <text x="148.0" y="136" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">from JCPOA</text>
+  <circle cx="236.0" cy="80" r="10" fill="#093824"/>
+  <text x="236.0" y="62" font-family="sans-serif" font-size="13" font-weight="700" fill="#093824" text-anchor="middle">Oct 2023</text>
+  <text x="236.0" y="100" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">Hamas</text>
+  <text x="236.0" y="118" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">attacks</text>
+  <text x="236.0" y="136" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">Israel;</text>
+  <text x="236.0" y="154" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">regional war</text>
+  <text x="236.0" y="172" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">widens</text>
+  <circle cx="324.0" cy="80" r="10" fill="#093824"/>
+  <text x="324.0" y="62" font-family="sans-serif" font-size="13" font-weight="700" fill="#093824" text-anchor="middle">2025</text>
+  <text x="324.0" y="100" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">Iran nuclear</text>
+  <text x="324.0" y="118" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">threshold</text>
+  <text x="324.0" y="136" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">crossed</text>
+  <circle cx="412.0" cy="80" r="10" fill="#093824"/>
+  <text x="412.0" y="62" font-family="sans-serif" font-size="13" font-weight="700" fill="#093824" text-anchor="middle">Mar 1 2026</text>
+  <text x="412.0" y="100" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">US-Israel</text>
+  <text x="412.0" y="118" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">strikes</text>
+  <text x="412.0" y="136" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">begin</text>
+  <circle cx="500.0" cy="80" r="10" fill="#093824"/>
+  <text x="500.0" y="62" font-family="sans-serif" font-size="13" font-weight="700" fill="#093824" text-anchor="middle">Mar 18 2026</text>
+  <text x="500.0" y="100" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">Day 18:</text>
+  <text x="500.0" y="118" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">Tehran</text>
+  <text x="500.0" y="136" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">strikes near</text>
+  <text x="500.0" y="154" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">Tel Aviv</text>
+</svg>
+    </div>
+  </div>
+  <div class="email-section">
+    <h2>Iran's Asymmetric Playbook</h2>
+    <p>Here is what makes this conflict different from every previous US military campaign in the region: Iran has been preparing for it for decades.</p>
+<p>As the Institute for the Study of War noted this week, Iran's military weakness relative to the United States led it to adopt a strategy that seeks to outlast Washington rather than defeat it outright. Iran cannot win a conventional war. It does not need to. Its objective is survival — keeping the regime intact long enough for US domestic pressure, coalition fatigue, and economic pain to force a negotiated exit.</p>
+<p>The Strait of Hormuz is the sharpest edge of this strategy. Roughly 20% of the world's oil supply passes through it. Trump's public demand that the world keep the strait open signals that Iran's leverage there is already being felt in oil markets and Gulf capitals. The question analysts are now asking is not whether Iran can be defeated militarily — it probably can — but whether the political will exists to pay the full price of that victory.</p>
+    <div class="infographic-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 352" width="560" height="352">
+  <rect width="560" height="352" rx="8" fill="#f9fafb"/>
+  <text x="280" y="28" font-family="sans-serif" font-size="16" font-weight="700" fill="#111827" text-anchor="middle">Iran's Asymmetric Strategy</text>
+  <line x1="40" y1="78" x2="40" y2="116" stroke="#093824" stroke-width="2" opacity="0.3"/>
+  <circle cx="40" cy="62" r="18" fill="#093824"/>
+  <text x="40" y="67" font-family="sans-serif" font-size="14" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+  <text x="72" y="58" font-family="sans-serif" font-size="15" font-weight="700" fill="#111827">Proxy Network</text>
+  <text x="72" y="76" font-family="sans-serif" font-size="13" fill="#6b7280">Hezbollah, Houthis, Iraqi militias absorb pressure</text>
+  <text x="72" y="94" font-family="sans-serif" font-size="13" fill="#6b7280">and stretch US-Israeli resources across multiple</text>
+  <line x1="40" y1="150" x2="40" y2="188" stroke="#093824" stroke-width="2" opacity="0.3"/>
+  <circle cx="40" cy="134" r="18" fill="#093824"/>
+  <text x="40" y="139" font-family="sans-serif" font-size="14" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+  <text x="72" y="130" font-family="sans-serif" font-size="15" font-weight="700" fill="#111827">Missile Deterrence</text>
+  <text x="72" y="148" font-family="sans-serif" font-size="13" fill="#6b7280">Ballistic missile arsenal threatens Israel and Gulf</text>
+  <text x="72" y="166" font-family="sans-serif" font-size="13" fill="#6b7280">neighbours, raising the cost of direct confrontation</text>
+  <line x1="40" y1="222" x2="40" y2="260" stroke="#093824" stroke-width="2" opacity="0.3"/>
+  <circle cx="40" cy="206" r="18" fill="#093824"/>
+  <text x="40" y="211" font-family="sans-serif" font-size="14" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+  <text x="72" y="202" font-family="sans-serif" font-size="15" font-weight="700" fill="#111827">Hormuz Leverage</text>
+  <text x="72" y="220" font-family="sans-serif" font-size="13" fill="#6b7280">Threat to close the Strait of Hormuz — 20% of global</text>
+  <text x="72" y="238" font-family="sans-serif" font-size="13" fill="#6b7280">oil supply — as economic pressure on the West</text>
+  <circle cx="40" cy="278" r="18" fill="#093824"/>
+  <text x="40" y="283" font-family="sans-serif" font-size="14" font-weight="800" fill="#fff" text-anchor="middle">4</text>
+  <text x="72" y="274" font-family="sans-serif" font-size="15" font-weight="700" fill="#111827">Outlast, Don't Defeat</text>
+  <text x="72" y="292" font-family="sans-serif" font-size="13" fill="#6b7280">Survive the assault, preserve the regime, wait for</text>
+  <text x="72" y="310" font-family="sans-serif" font-size="13" fill="#6b7280">US domestic pressure and coalition fatigue to force</text>
+</svg>
+    </div>
+  </div>
+  <div class="email-section">
+    <h2>The Diplomatic Fault Lines</h2>
+    <p>The most revealing statement of the past week did not come from Tehran or Jerusalem. It came from Finland. Finnish Foreign Affairs Minister Elina Valtonen told Euronews bluntly: &quot;NATO is not obliged to help Trump in Iran.&quot; That single sentence captures the central diplomatic problem facing Washington — this is, for now, a coalition of two.</p>
+<p>NATO allies are watching, not joining. Trump has responded by floating the idea that the US should reconsider its NATO membership — a comment that landed like a grenade in Brussels. The pressure on European capitals to choose sides is intensifying with every passing day.</p>
+<p>Meanwhile, Trump says the terms for a deal with Iran are &quot;not good enough yet&quot; — suggesting back-channel negotiations are already underway even as strikes continue. The gap between what Washington wants (verified denuclearisation, regime accountability) and what Tehran will accept (survival and sanctions relief) remains enormous. But the fact that both sides appear to be leaving a diplomatic door ajar is the one signal worth watching.</p>
+    <div class="infographic-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 260" width="560" height="260">
+  <rect width="560" height="260" rx="8" fill="#f9fafb"/>
+  <rect x="280" y="50" width="1" height="180" fill="#e5e7eb"/>
+  <text x="280" y="36" font-family="sans-serif" font-size="16" font-weight="700" fill="#111827" text-anchor="middle">War Objectives: Two Irreconcilable Goals</text>
+  <text x="140" y="80" font-family="sans-serif" font-size="13" font-weight="700" fill="#093824" text-anchor="middle" letter-spacing="1">US &amp; Israel</text>
+  <text x="140" y="140" font-family="sans-serif" font-size="52" font-weight="800" fill="#093824" text-anchor="middle">Destroy</text>
+  <text x="140" y="172" font-family="sans-serif" font-size="14" fill="#374151" text-anchor="middle">Eliminate nuclear</text>
+  <text x="140" y="194" font-family="sans-serif" font-size="14" fill="#374151" text-anchor="middle">capability, decapitate</text>
+  <text x="140" y="216" font-family="sans-serif" font-size="14" fill="#374151" text-anchor="middle">military leadership,</text>
+  <text x="140" y="238" font-family="sans-serif" font-size="14" fill="#374151" text-anchor="middle">force regime change or</text>
+  <text x="140" y="260" font-family="sans-serif" font-size="14" fill="#374151" text-anchor="middle">capitulation</text>
+  <text x="420" y="80" font-family="sans-serif" font-size="13" font-weight="700" fill="#c0652a" text-anchor="middle" letter-spacing="1">Iran</text>
+  <text x="420" y="140" font-family="sans-serif" font-size="52" font-weight="800" fill="#c0652a" text-anchor="middle">Survive</text>
+  <text x="420" y="172" font-family="sans-serif" font-size="14" fill="#374151" text-anchor="middle">Preserve the regime,</text>
+  <text x="420" y="194" font-family="sans-serif" font-size="14" fill="#374151" text-anchor="middle">exhaust the coalition,</text>
+  <text x="420" y="216" font-family="sans-serif" font-size="14" fill="#374151" text-anchor="middle">negotiate from a</text>
+  <text x="420" y="238" font-family="sans-serif" font-size="14" fill="#374151" text-anchor="middle">position of endurance</text>
+  <text x="420" y="260" font-family="sans-serif" font-size="14" fill="#374151" text-anchor="middle">not defeat</text>
+</svg>
+    </div>
+  </div>
+  <div class="email-section">
+    <h2>What Happens Next: Three Scenarios</h2>
+    <p>Scenario one — a negotiated freeze — is the outcome both sides' publics would prefer. Iran agrees to verified nuclear rollback in exchange for a ceasefire and staged sanctions relief. Trump claims victory. Tehran claims survival. The region exhales. This requires both sides to back away from stated maximalist positions, which historically happens only when the military cost becomes unbearable for at least one party.</p>
+<p>Scenario two — prolonged asymmetric conflict — is what Iran is actively engineering. Tehran absorbs the strikes, keeps retaliating at a manageable level, activates remaining proxy networks in Iraq and Yemen, and turns the Hormuz threat into sustained economic pressure. The war drags into months. US domestic support frays. A second negotiation opens from a position of mutual exhaustion rather than Iranian defeat.</p>
+<p>Scenario three — regional escalation — is the tail risk everyone fears. A miscalculation: a strike that kills far more civilians than intended, an Iranian missile that hits a US carrier, a Gulf state dragged in by an Iranian proxy attack. Any of these could pull in actors who have so far stayed out, turning a bilateral conflict into something far harder to contain.</p>
+<p>Day 18 suggests scenario two is already underway. The question is whether either side has the appetite — or the strategy — to force a different outcome.</p>
+  </div>
+
+    <div class="email-conclusion">
+      <p>Wars are rarely decided by the side that strikes hardest. They are decided by the side that can sustain the fight longest without losing political support at home. Iran has spent forty years building for exactly this moment. The US and Israel have superior firepower and, for now, the initiative.</p>
+<p>What neither side has yet demonstrated is a clear theory of how this ends — not just how it continues. That is the question that will define the next eighteen days more than any strike package or missile barrage.</p>
+    </div>
+
+  <div class="cta-block">
+    <a href="https://www.aljazeera.com/news/liveblog/2026/3/15/iran-war-live-trump-urges-world-to-keep-hormuz-strait-open" class="cta-button">Follow the full conflict timeline</a>
+  </div>
+
+  <div class="sources-block">
+    <h3>Sources</h3>
+    <ol>
+      <li><a href="https://www.aljazeera.com/news/liveblog/2026/3/15/iran-war-live-trump-urges-world-to-keep-hormuz-strait-open">Al Jazeera: Iran war updates — Tehran says ready for long war</a></li>
+      <li><a href="https://www.euronews.com/video/2026/03/18/iran-rescuers-search-tehran-rubble-after-us-israeli-strikes-kill-senior-figures">Euronews: Rescuers search Tehran rubble after US-Israeli strikes</a></li>
+      <li><a href="https://www.dw.com/en/are-the-us-and-israel-waging-a-war-on-irans-terms/video-76402500">DW News: Are the US and Israel waging a war on Iran's terms?</a></li>
+      <li><a href="https://understandingwar.org/research/middle-east/the-war-in-iran-operational-progress-but-challenges-remain/">Institute for the Study of War: Operational Progress, but Challenges Remain</a></li>
+      <li><a href="https://www.atlanticcouncil.org/dispatches/twenty-questions-and-expert-answers-about-the-iran-war/">Atlantic Council: Twenty questions about the Iran war</a></li>
+      <li><a href="https://www.cnbc.com/video/2026/03/18/israel-kills-more-iranian-leaders-former-mossad-analyst-sima-shine-on-whats-next-in-the-iran-war.html">CNBC: Israel kills more Iranian leaders — former Mossad analyst on what's next</a></li>
+      <li><a href="https://www.nbcnews.com/world/iran-war">NBC News: Iran War — Latest News and Live Coverage</a></li>
+    </ol>
+  </div>
+
+    <div class="email-footer">
+      <p>Generated 2026-03-18 15:20 UTC · WAT Newsletter Automation</p>
+    </div>
+
+  </div>
+</body>
+</html>

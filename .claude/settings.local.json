@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:/Personal/MyGitHubRepos/BuildAndSellWithClaudeCode/NewsLetterDemo/.tmp\")",
+      "Bash(mkdir -p \"C:/Personal/MyGitHubRepos/BuildAndSellWithClaudeCode/NewsLetterDemo/tools\")",
+      "Bash(mkdir -p \"C:/Personal/MyGitHubRepos/BuildAndSellWithClaudeCode/NewsLetterDemo/workflows\")",
+      "Bash(pip install:*)",
+      "Bash(python tools/research.py --topic \"generative AI trends 2026\" --depth 8 --output .tmp/research_test.json)",
+      "Bash(python -c \"import json; d=json.load\\(open\\(''.tmp/research_test.json''\\)\\); print\\(''Topic:'', d[''topic'']\\); print\\(''Key points:'',len\\(d[''key_points'']\\)\\); print\\(''Sources:'',len\\(d[''sources'']\\)\\); print\\(''Stats:'',len\\(d[''stats'']\\)\\); print\\(\\); print\\(''SAMPLE KEY POINT:'', d[''key_points''][0][:120]\\); print\\(''SAMPLE STAT:'', d[''stats''][0]\\)\")",
+      "Bash(python tools/generate_infographic.py --spec .tmp/infographic_specs/test/stat_01.json --output .tmp/infographics/test/stat_01.svg)",
+      "Bash(python tools/generate_infographic.py --spec .tmp/infographic_specs/test/timeline_01.json --output .tmp/infographics/test/timeline_01.svg)",
+      "Bash(python tools/generate_infographic.py --spec .tmp/infographic_specs/test/quote_01.json --output .tmp/infographics/test/quote_01.svg)",
+      "Bash(python tools/research.py --topic \"US Israel Iran war 2026 latest developments\" --depth 8 --output .tmp/research_iran-war.json)",
+      "Bash(python tools/generate_infographic.py --spec .tmp/infographic_specs/iran-war/timeline.json --output .tmp/infographics/iran-war/timeline.svg)",
+      "Bash(python tools/generate_infographic.py --spec .tmp/infographic_specs/iran-war/asymmetric_strategy.json --output .tmp/infographics/iran-war/asymmetric_strategy.svg)",
+      "Bash(python tools/generate_infographic.py --spec .tmp/infographic_specs/iran-war/goals_comparison.json --output .tmp/infographics/iran-war/goals_comparison.svg)",
+      "Bash(python tools/send_newsletter.py --html archive/2026-03-18_iran-war/2026-03-18_iran-war.html --to bartvanhoey@hotmail.com --subject \"Day 18: What the Iran War Is Really About — And How It Ends\" --receipt .tmp/receipts/2026-03-18_iran-war.json)"
+    ]
+  }
+}

@@ -1,0 +1,272 @@
+/* default.css — Brand-aligned newsletter template
+   Colors: brand primary green (#093824) + terracotta accent (#c0652a)
+   Typography: Montserrat (headings) + Source Sans Pro (body)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  /* Brand primaries */
+  --accent:          #093824;   /* brand green base */
+  --accent-mid:      #7fb9a6;   /* primary-300 — mid green */
+  --accent-light:    #eef7f3;   /* primary-50 — light green tint */
+  --accent-border:   #b3d6c7;   /* primary-200 */
+
+  /* Terracotta secondary */
+  --secondary:       #c0652a;
+  --secondary-light: #fbf2ec;
+
+  /* Neutrals */
+  --text-primary:    #101828;   /* brand black */
+  --text-secondary:  #475467;   /* gray-600 */
+  --text-muted:      #667085;   /* gray-500 */
+  --bg-body:         #f9fafb;   /* gray-50 */
+  --bg-card:         #ffffff;
+  --border:          #e4e7ec;   /* gray-200 */
+  --border-light:    #f2f4f7;   /* gray-100 */
+
+  /* Typography */
+  --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body:    'Source Sans 3', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--bg-body);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Wrapper ── */
+.email-wrapper {
+  max-width: 640px;
+  margin: 32px auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(9,56,36,.08);
+}
+
+/* ── Header ── */
+.email-header {
+  background: var(--accent);
+  padding: 40px 40px 32px;
+  text-align: left;
+  position: relative;
+}
+
+/* Decorative right-edge accent strip */
+.email-header::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 8px;
+  height: 100%;
+  background: var(--secondary);
+}
+
+.email-header .brand {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent-mid);
+  margin-bottom: 14px;
+}
+
+.email-header h1 {
+  font-family: var(--font-heading);
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0;
+  max-width: 520px;
+}
+
+.email-header .issue-meta {
+  font-family: var(--font-body);
+  color: rgba(255,255,255,.55);
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+/* ── Intro ── */
+.email-intro {
+  padding: 32px 40px 24px;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--accent-light);
+}
+
+/* ── Section ── */
+.email-section {
+  padding: 28px 40px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.email-section h2 {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Bullet dot before section titles — matches brand guideline style */
+.email-section h2::before {
+  content: '●';
+  color: var(--accent);
+  font-size: 10px;
+}
+
+.email-section p {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.email-section p:last-child { margin-bottom: 0; }
+
+/* ── Infographic container ── */
+.infographic-wrap {
+  margin: 20px 0;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.infographic-wrap svg { display: block; width: 100%; height: auto; }
+
+/* ── Key stats strip ── */
+.stats-strip {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.stat-item {
+  flex: 1;
+  padding: 20px 16px;
+  text-align: center;
+  background: var(--accent-light);
+  border-right: 1px solid var(--accent-border);
+}
+
+.stat-item:last-child { border-right: none; }
+
+.stat-item .stat-value {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--accent);
+  display: block;
+}
+
+.stat-item .stat-label {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-top: 4px;
+  display: block;
+}
+
+/* ── Conclusion ── */
+.email-conclusion {
+  padding: 28px 40px;
+  border-bottom: 1px solid var(--border-light);
+  background: var(--accent-light);
+}
+
+.email-conclusion p {
+  font-family: var(--font-body);
+  line-height: 1.75;
+  margin-bottom: 14px;
+  color: var(--text-primary);
+}
+
+.email-conclusion p:last-child { margin-bottom: 0; }
+
+/* ── CTA ── */
+.cta-block {
+  text-align: center;
+  padding: 28px 40px 36px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--secondary);
+  color: #ffffff !important;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: 13px 32px;
+  border-radius: 4px;
+}
+
+/* ── Sources ── */
+.sources-block {
+  padding: 20px 40px;
+  background: var(--bg-body);
+  border-top: 1px solid var(--border);
+}
+
+.sources-block h3 {
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.sources-block ol { padding-left: 18px; margin: 0; }
+
+.sources-block li {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.sources-block a { color: var(--accent); text-decoration: none; }
+
+/* ── Footer ── */
+.email-footer {
+  padding: 18px 40px;
+  text-align: center;
+  background: var(--accent);
+}
+
+.email-footer p {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: rgba(255,255,255,.45);
+  margin-bottom: 2px;
+}

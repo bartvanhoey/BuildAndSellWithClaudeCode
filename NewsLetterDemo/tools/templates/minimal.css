@@ -1,0 +1,242 @@
+/* minimal.css — Brand editorial/minimal newsletter template
+   Colors: terracotta primary accent, green secondary, clean white canvas
+   Typography: Montserrat (headings) + Source Sans Pro (body, slightly larger)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  /* Lead with terracotta in minimal — makes it feel warm and editorial */
+  --accent:          #c0652a;   /* secondary base — terracotta */
+  --accent-light:    #fbf2ec;   /* secondary-50 */
+  --accent-border:   #e9c2ab;   /* secondary-200 */
+
+  /* Green as structural element */
+  --green:           #093824;
+  --green-mid:       #7fb9a6;
+
+  /* Neutrals */
+  --text-primary:    #101828;
+  --text-secondary:  #475467;   /* gray-600 */
+  --text-muted:      #667085;   /* gray-500 */
+  --bg-body:         #ffffff;
+  --bg-card:         #ffffff;
+  --bg-tint:         #f9fafb;   /* gray-50 */
+  --border:          #e4e7ec;   /* gray-200 */
+  --border-light:    #f2f4f7;   /* gray-100 */
+
+  /* Typography */
+  --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body:    'Source Sans 3', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--bg-body);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Wrapper ── */
+.email-wrapper {
+  max-width: 600px;
+  margin: 48px auto;
+  background: var(--bg-card);
+}
+
+/* ── Header ── */
+.email-header {
+  padding: 0 0 28px;
+  border-bottom: 3px solid var(--green);
+}
+
+.email-header .brand {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.email-header h1 {
+  font-family: var(--font-heading);
+  color: var(--green);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.email-header .issue-meta {
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/* ── Intro ── */
+.email-intro {
+  padding: 32px 0 24px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-light);
+}
+
+/* ── Section ── */
+.email-section {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.email-section h2 {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.email-section h2::before {
+  content: '●';
+  color: var(--accent);
+  font-size: 10px;
+}
+
+.email-section p {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.email-section p:last-child { margin-bottom: 0; }
+
+/* ── Infographic container ── */
+.infographic-wrap {
+  margin: 22px 0;
+  border-left: 3px solid var(--accent);
+  overflow: hidden;
+}
+
+.infographic-wrap svg { display: block; width: 100%; height: auto; }
+
+/* ── Key stats strip ── */
+.stats-strip {
+  display: flex;
+  gap: 24px;
+  margin: 24px 0;
+}
+
+.stat-item {
+  flex: 1;
+  padding: 0;
+  border-top: 2px solid var(--accent);
+  padding-top: 12px;
+}
+
+.stat-item .stat-value {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--green);
+  display: block;
+  line-height: 1;
+}
+
+.stat-item .stat-label {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-top: 6px;
+  display: block;
+}
+
+/* ── Conclusion ── */
+.email-conclusion {
+  padding: 28px;
+  border-bottom: 1px solid var(--border-light);
+  background: var(--accent-light);
+  border-left: 3px solid var(--accent);
+  margin: 0 -28px;
+  width: calc(100% + 56px);
+}
+
+.email-conclusion p {
+  font-family: var(--font-body);
+  line-height: 1.8;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.email-conclusion p:last-child { margin-bottom: 0; }
+
+/* ── CTA ── */
+.cta-block { padding: 28px 0; }
+
+.cta-button {
+  display: inline-block;
+  background: transparent;
+  color: var(--green) !important;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 12px;
+  padding: 10px 0;
+  border-bottom: 2px solid var(--green);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+/* ── Sources ── */
+.sources-block {
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+}
+
+.sources-block h3 {
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.sources-block ol { padding-left: 18px; margin: 0; }
+
+.sources-block li {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.sources-block a { color: var(--accent); text-decoration: none; }
+
+/* ── Footer ── */
+.email-footer { padding: 24px 0 0; border-top: 3px solid var(--green); }
+
+.email-footer p {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}

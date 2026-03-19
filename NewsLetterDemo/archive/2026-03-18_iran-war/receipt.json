@@ -1,0 +1,25 @@
+{
+  "sent_at": "2026-03-18T15:25:53.386342Z",
+  "to": "bartvanhoey@hotmail.com",
+  "subject": "Day 18: What the Iran War Is Really About \u2014 And How It Ends",
+  "from": "Newsletter <newsletter@resend.dev>",
+  "html_file": "archive\\2026-03-18_iran-war\\2026-03-18_iran-war.html",
+  "resend_response": {
+    "id": "e8cf1950-751e-4f9d-9715-4401cc0832cc",
+    "http_headers": {
+      "Date": "Wed, 18 Mar 2026 15:25:53 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "45",
+      "Connection": "keep-alive",
+      "ratelimit-limit": "5",
+      "ratelimit-policy": "5;w=1",
+      "ratelimit-remaining": "4",
+      "ratelimit-reset": "1",
+      "x-resend-daily-quota": "0",
+      "x-resend-monthly-quota": "0",
+      "cf-cache-status": "DYNAMIC",
+      "Server": "cloudflare",
+      "CF-RAY": "9de540a71d80dc86-FRA"
+    }
+  }
+}

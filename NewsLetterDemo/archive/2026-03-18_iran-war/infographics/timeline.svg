@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" width="560" height="160">
+  <rect width="560" height="160" rx="8" fill="#f9fafb"/>
+  <line x1="60.0" y1="80" x2="500.0" y2="80" stroke="#093824" stroke-width="2" opacity="0.3"/>
+  <text x="280" y="24" font-family="sans-serif" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">The Road to War</text>
+  <circle cx="60.0" cy="80" r="10" fill="#093824"/>
+  <text x="60.0" y="62" font-family="sans-serif" font-size="13" font-weight="700" fill="#093824" text-anchor="middle">2015</text>
+  <text x="60.0" y="100" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">Iran nuclear</text>
+  <text x="60.0" y="118" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">deal signed</text>
+  <text x="60.0" y="136" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">(JCPOA)</text>
+  <circle cx="148.0" cy="80" r="10" fill="#093824"/>
+  <text x="148.0" y="62" font-family="sans-serif" font-size="13" font-weight="700" fill="#093824" text-anchor="middle">2018</text>
+  <text x="148.0" y="100" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">Trump</text>
+  <text x="148.0" y="118" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">withdraws</text>
+  <text x="148.0" y="136" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">from JCPOA</text>
+  <circle cx="236.0" cy="80" r="10" fill="#093824"/>
+  <text x="236.0" y="62" font-family="sans-serif" font-size="13" font-weight="700" fill="#093824" text-anchor="middle">Oct 2023</text>
+  <text x="236.0" y="100" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">Hamas</text>
+  <text x="236.0" y="118" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">attacks</text>
+  <text x="236.0" y="136" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">Israel;</text>
+  <text x="236.0" y="154" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">regional war</text>
+  <text x="236.0" y="172" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">widens</text>
+  <circle cx="324.0" cy="80" r="10" fill="#093824"/>
+  <text x="324.0" y="62" font-family="sans-serif" font-size="13" font-weight="700" fill="#093824" text-anchor="middle">2025</text>
+  <text x="324.0" y="100" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">Iran nuclear</text>
+  <text x="324.0" y="118" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">threshold</text>
+  <text x="324.0" y="136" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">crossed</text>
+  <circle cx="412.0" cy="80" r="10" fill="#093824"/>
+  <text x="412.0" y="62" font-family="sans-serif" font-size="13" font-weight="700" fill="#093824" text-anchor="middle">Mar 1 2026</text>
+  <text x="412.0" y="100" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">US-Israel</text>
+  <text x="412.0" y="118" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">strikes</text>
+  <text x="412.0" y="136" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">begin</text>
+  <circle cx="500.0" cy="80" r="10" fill="#093824"/>
+  <text x="500.0" y="62" font-family="sans-serif" font-size="13" font-weight="700" fill="#093824" text-anchor="middle">Mar 18 2026</text>
+  <text x="500.0" y="100" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">Day 18:</text>
+  <text x="500.0" y="118" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">Tehran</text>
+  <text x="500.0" y="136" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">strikes near</text>
+  <text x="500.0" y="154" font-family="sans-serif" font-size="12" fill="#374151" text-anchor="middle">Tel Aviv</text>
+</svg>

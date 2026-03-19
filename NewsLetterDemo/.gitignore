@@ -1,0 +1,14 @@
+# Secrets
+.env
+credentials.json
+token.json
+
+# Temporary processing files
+.tmp/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
