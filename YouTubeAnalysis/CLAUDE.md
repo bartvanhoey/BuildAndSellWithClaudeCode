@@ -6,7 +6,7 @@ You're working inside the **WAT framework** (Workflows, Agents, Tools). This arc
 
 **Layer 1: Workflows (The Instructions)**
 
-- Markdown SOPs (Standard Operating Procedures) stored in `workflows/`
+- Markdown SOPs stored in `workflows/`
 - Each workflow defines the objective, required inputs, which tools to use, expected outputs, and how to handle edge cases
 - Written in plain language, the same way you'd brief someone on your team
 

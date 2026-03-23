@@ -1,0 +1,20 @@
+{
+  "search_terms": [
+    "AI automation 2026",
+    "n8n tutorial",
+    "Claude AI",
+    "ChatGPT automation",
+    "AI agents workflow",
+    "make.com automation",
+    "LLM automation business"
+  ],
+  "pinned_channels": [],
+  "results_per_search": 10,
+  "max_videos": 50,
+  "max_transcripts": 20,
+  "published_within_days": 14,
+  "min_views_threshold": 1000,
+  "email_recipient": "bartvanhoey@hotmail.com",
+  "email_subject_template": "YouTube AI Trends — Week of {date}",
+  "sender_name": "YouTube Trends Bot"
+}

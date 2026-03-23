@@ -1,5 +1,32 @@
 # Prompts
 
+## YouTubeAnalysis Project Setup
+
+```bash
+    hey Claude,read the CLAUDE.md file in the YouTubeAnalysis folder and then set up the project and the structure in the YouTubeAnalysis folder, and then we will start building workflows together. If you have any questions about the project or the structure, ask me before you start building anything.
+```
+
+```bash
+   hey Claude, I need you help building an automation.
+I want this automation to basically scrape tons of YouTube videos and YouTube channels in my niche which is AI and AI Automation.
+
+I want to get insights about what videos are trending, what is working well and kind of what the AI space is feeling like so that I can create more content that people want to see and that will be beneficial for them.
+
+I need you help understanding how we can actually get this data. So look into different APIs or MCP servers.
+
+Also let me know if there are any skills that would be helpful because after you've done this research,
+what I want you to do, is I want you to create a slide deck for me.
+
+So I want to get an actual deliverable that will be sent to my email using Gmail,
+and it should be a really nice professional looking slide deck with charts and images, and all of these different graphics,
+so that I can understand what is going on in the industry.
+
+So, that's what i've got. Let me know if you have any questions,
+ or if you have any recommendations for things that I haven't thought of about this automation system.
+```
+
+To run a real YouTube analysis: Start a new conversation and say: "Run the YouTube analysis workflow for channel: [channel name]"
+
 ## NewsLetterDemo Project Setup
 
 ```bash
@@ -20,7 +47,7 @@ To run a real newsletter: Start a new conversation and say: "Run the newsletter 
 ```
 
 ```bash
-   I have an idea about a workflow I want to create. I basically want a branded  PDF with my logo. I will give you my logo and the company guidelines. The PDF output should have my logo on it and the correct typographic and our company colors. The workflow is basically a competitor analysis and research  work flow. I will give you information about my company that you need to save, and based upon that information you need to find and compare competitors and find me areas to improve my company and maybe see what is working well for them. And build me out a good way to keep tabs on the market and what's going on with my competitors. That's what i am looking for. Help me about the plan for this work flow, and you can always ask me questions 
+   I have an idea about a workflow I want to create. I basically want a branded  PDF with my logo. I will give you my logo and the company guidelines. The PDF output should have my logo on it and the correct typographic and our company colors. The workflow is basically a competitor analysis and research  work flow. I will give you information about my company that you need to save, and based upon that information you need to find and compare competitors and find me areas to improve my company and maybe see what is working well for them. And build me out a good way to keep tabs on the market and what's going on with my competitors. That's what i am looking for. Help me about the plan for this work flow, and you can always ask me questions
 ```
 
 ## AgenticWorkflowDemo Project Setup
@@ -48,6 +75,3 @@ hey Claude, I've got this URL that I need help with. I want you to basically to 
 and I want jobs that are sales opportunities or sales jobs and I want to look just in Europe.
 So, I want you to get like 500 jobs back and put it in nicely formatted excel sheet for me. I want to make sure that you get all the relevant information about the job, like the title, short job description, the company, the location, the date it was posted, and also make sure to get the url for each job post as well. If you have any questions about this, ask me before you start scraping.
 ```
-
-
-
