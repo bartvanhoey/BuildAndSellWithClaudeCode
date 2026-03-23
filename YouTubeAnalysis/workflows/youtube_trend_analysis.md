@@ -1,7 +1,7 @@
 # YouTube Trend Analysis Workflow — Weekly SOP
 
 ## Purpose
-Produce a weekly YouTube trend report for the AI/automation niche and deliver it as a professional `.pptx` slide deck via Gmail. The report helps the creator understand what's trending, who's winning, and what content ideas are underserved.
+Produce a weekly YouTube trend report for the AI/automation niche and deliver it as a professional `.pdf` brand report via Gmail. The report helps the creator understand what's trending, who's winning, and what content ideas are underserved.
 
 ## Trigger
 - **Scheduled**: Weekly (e.g., Monday 07:00 AM) via Windows Task Scheduler
@@ -30,7 +30,7 @@ Confirm `YOUTUBE_API_KEY` is set in `.env` and non-empty. If missing, stop and i
 Confirm `config.json` exists and `search_terms` is non-empty. If missing, stop.
 
 ### Step 0.3 — Check Gmail credentials
-Confirm `credentials.json` exists. If missing, warn and note the email delivery step will fail — but continue with data collection and deck generation. The local `.pptx` file will still be available in `.tmp/decks/`.
+Confirm `credentials.json` exists. If missing, warn and note the email delivery step will fail — but continue with data collection and report generation. The local `.pdf` file will still be available in `.tmp/decks/`.
 
 ### Step 0.4 — Set date prefix
 Today's date in `YYYY-MM-DD` format is the date prefix used by all tools. All intermediate files will be date-stamped.
@@ -114,18 +114,18 @@ Write the enriched analysis back to `.tmp/analysis_YYYY-MM-DD.json` before proce
 
 ---
 
-## Phase 3 — Deck Generation
+## Phase 3 — Report Generation
 
-### Step 3.1 — Build Slide Deck
+### Step 3.1 — Build PDF Report
 ```
-python tools/build_slide_deck.py
+python tools/build_pdf_report.py
 ```
-**Output**: `.tmp/decks/youtube_trends_YYYY-MM-DD.pptx`
+**Output**: `.tmp/decks/youtube_trends_YYYY-MM-DD.pdf`
 
 Verify the file exists and is non-zero bytes before continuing. If the file is 0 bytes or missing, re-run with stderr output visible and fix the error before proceeding to email.
 
-**Slide structure**:
-1. Cover + Executive Summary
+**Page structure**:
+1. Cover + Executive Summary (with AIS logo branding)
 2. Top 10 Trending Videos (table, engagement color-coded)
 3. View Velocity Chart (what's growing fastest right now)
 4. Engagement Rate Chart (algorithmic signal)
@@ -133,6 +133,7 @@ Verify the file exists and is non-zero bytes before continuing. If the file is 0
 6. Top Channels Table + Spotlights
 7. Transcript Themes (what's actually being taught)
 8. Content Opportunity Gaps + Recommended Video Ideas
+9. Back Cover (branding + source attribution)
 
 ---
 
@@ -140,7 +141,7 @@ Verify the file exists and is non-zero bytes before continuing. If the file is 0
 
 ### Step 4.1 — Send Email
 ```
-python tools/send_email.py --attachment .tmp/decks/youtube_trends_YYYY-MM-DD.pptx
+python tools/send_email.py --attachment .tmp/decks/youtube_trends_YYYY-MM-DD.pdf
 ```
 **Output**: `.tmp/receipts/email_receipt_YYYY-MM-DD.json`
 
@@ -158,8 +159,8 @@ Report the `message_id` and recipient to the user as confirmation.
 | `YOUTUBE_API_KEY` invalid (403 forbidden) | Halt. Verify the key in Google Cloud Console. Confirm YouTube Data API v3 is enabled on the project. |
 | Zero videos returned from search | Warn. Widen `published_within_days` (try 30). Check that search terms are not too narrow or misspelled. |
 | All transcripts fail | Note in executive summary. Slides 7 and 8 render with "No transcript data available." Do not halt — the remaining 6 slides are still valuable. |
-| `credentials.json` missing for Gmail | Skip Phase 4. Report that the deck is available at `.tmp/decks/youtube_trends_YYYY-MM-DD.pptx`. Instruct user to download `credentials.json` from Google Cloud Console with Gmail API enabled. |
-| `.pptx` file is 0 bytes | Stop Phase 4. Re-run `build_slide_deck.py` and inspect stderr output. Do not send a broken attachment. |
+| `credentials.json` missing for Gmail | Skip Phase 4. Report that the report is available at `.tmp/decks/youtube_trends_YYYY-MM-DD.pdf`. Instruct user to download `credentials.json` from Google Cloud Console with Gmail API enabled. |
+| `.pdf` file is 0 bytes | Stop Phase 4. Re-run `build_pdf_report.py` and inspect stderr output. Do not send a broken attachment. |
 | Pinned channel ID not found | `fetch_channel_stats.py` logs a warning and continues. Invalid IDs are reported in the output JSON under `invalid_ids`. |
 | Gmail OAuth token expired | `send_email.py` will automatically refresh the token using the refresh token. If refresh fails, re-run to trigger a fresh browser consent flow. |
 
@@ -174,7 +175,7 @@ Report the `message_id` and recipient to the user as confirmation.
 | `.tmp/channel_stats_YYYY-MM-DD.json` | Channel-level data |
 | `.tmp/transcripts_YYYY-MM-DD.json` | Transcript text per video |
 | `.tmp/analysis_YYYY-MM-DD.json` | Full analytics report with agent-written narrative |
-| `.tmp/decks/youtube_trends_YYYY-MM-DD.pptx` | Final deliverable |
+| `.tmp/decks/youtube_trends_YYYY-MM-DD.pdf` | Final deliverable (branded 9-page PDF report) |
 | `.tmp/receipts/email_receipt_YYYY-MM-DD.json` | Email delivery confirmation |
 
 All `.tmp/` files are date-stamped and disposable — they can be regenerated by re-running the workflow.

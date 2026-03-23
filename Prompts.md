@@ -25,6 +25,15 @@ So, that's what i've got. Let me know if you have any questions,
  or if you have any recommendations for things that I haven't thought of about this automation system.
 ```
 
+```bash
+hey Claude, so I just gave you a skill for Canvas Design, and instead of outputting a Powerpoint presentation, 
+I want you to now take the same research when you do your analysis from YouTube videos, 
+but I want you to use that Canvas Design skill to create a PDF. 
+It needs to be professional, but it needs to be aesthetically pleasing.
+And what I want you to do is to make sure you are including the AIS_Logo.png that I dropped in the YouTubeAnalysis folder as well.
+Because I want the whole presentation branded, so I can shared it with my team.
+```
+
 To run a real YouTube analysis: Start a new conversation and say: "Run the YouTube analysis workflow for channel: [channel name]"
 
 ## NewsLetterDemo Project Setup

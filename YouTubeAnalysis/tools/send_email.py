@@ -1,9 +1,9 @@
 """
 send_email.py
-Sends the .pptx deck as a Gmail attachment via the Gmail API.
+Sends the .pdf report as a Gmail attachment via the Gmail API.
 
 Usage:
-    python tools/send_email.py --attachment .tmp/decks/youtube_trends_2026-03-23.pptx
+    python tools/send_email.py --attachment .tmp/decks/youtube_trends_2026-03-23.pdf
     python tools/send_email.py --attachment <path> --to override@example.com
 
 Reads:
@@ -99,7 +99,7 @@ def load_config() -> dict:
 
 def build_email(sender: str, recipient: str, subject: str,
                 body: str, attachment_path: Path) -> str:
-    """Build a base64url-encoded email with a .pptx attachment."""
+    """Build a base64url-encoded email with a .pdf attachment."""
     msg = MIMEMultipart()
     msg["From"] = sender
     msg["To"] = recipient
@@ -110,7 +110,7 @@ def build_email(sender: str, recipient: str, subject: str,
     with open(attachment_path, "rb") as f:
         attachment = MIMEApplication(
             f.read(),
-            _subtype="vnd.openxmlformats-officedocument.presentationml.presentation",
+            _subtype="pdf",
         )
     attachment.add_header(
         "Content-Disposition", "attachment", filename=attachment_path.name
@@ -123,7 +123,7 @@ def build_email(sender: str, recipient: str, subject: str,
 
 def main():
     parser = argparse.ArgumentParser(description="Send YouTube trends deck via Gmail")
-    parser.add_argument("--attachment", required=True, help="Path to the .pptx file to send")
+    parser.add_argument("--attachment", required=True, help="Path to the .pdf file to send")
     parser.add_argument("--to", help="Override recipient email address")
     parser.add_argument("--subject", help="Override email subject")
     args = parser.parse_args()

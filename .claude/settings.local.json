@@ -26,7 +26,10 @@
       "mcp__firecrawl__firecrawl_scrape",
       "Bash(iconv -f utf-8 -t utf-8//IGNORE)",
       "Bash(python -c \":*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(mkdir -p \"C:\\\\Personal\\\\MyGitHubRepos\\\\BuildAndSellWithClaudeCode\\\\YouTubeAnalysis\\\\.claude\\\\skills\")",
+      "Bash(mv \"C:\\\\Personal\\\\MyGitHubRepos\\\\BuildAndSellWithClaudeCode\\\\YouTubeAnalysis\\\\canvas-design\" \"C:\\\\Personal\\\\MyGitHubRepos\\\\BuildAndSellWithClaudeCode\\\\YouTubeAnalysis\\\\.claude\\\\skills\\\\canvas-design\")",
+      "Bash(find C:PersonalMyGitHubReposBuildAndSellWithClaudeCode -name AIS_Logo.png -o -name *.png)"
     ]
   }
 }
