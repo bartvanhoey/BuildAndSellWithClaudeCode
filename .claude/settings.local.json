@@ -19,7 +19,13 @@
       "Bash(python tools/upload_to_drive.py --file \".tmp/competitor_report_2026-03-19.pdf\")",
       "Bash(python tools/assemble_report_data.py --file .tmp/report_draft.json)",
       "Bash(python tools/generate_pdf.py)",
-      "Bash(python tools/upload_to_drive.py --file \".tmp/competitor_report_2026-03-19.pdf\" --folder-id \"1K9UaW5mvESNrs_IX0XCxFnn7TSzhDvxd\")"
+      "Bash(python tools/upload_to_drive.py --file \".tmp/competitor_report_2026-03-19.pdf\" --folder-id \"1K9UaW5mvESNrs_IX0XCxFnn7TSzhDvxd\")",
+      "Bash(claude mcp:*)",
+      "WebFetch(domain:dailyremote.com)",
+      "Bash(python:*)",
+      "mcp__firecrawl__firecrawl_scrape",
+      "Bash(iconv -f utf-8 -t utf-8//IGNORE)",
+      "Bash(python -c \":*)"
     ]
   }
 }

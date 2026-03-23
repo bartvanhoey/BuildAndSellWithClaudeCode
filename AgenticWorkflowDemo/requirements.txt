@@ -1,0 +1,7 @@
+anthropic
+python-dotenv
+requests
+beautifulsoup4
+lxml
+openpyxl
+pandas
