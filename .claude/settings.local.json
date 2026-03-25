@@ -29,7 +29,15 @@
       "WebSearch",
       "Bash(mkdir -p \"C:\\\\Personal\\\\MyGitHubRepos\\\\BuildAndSellWithClaudeCode\\\\YouTubeAnalysis\\\\.claude\\\\skills\")",
       "Bash(mv \"C:\\\\Personal\\\\MyGitHubRepos\\\\BuildAndSellWithClaudeCode\\\\YouTubeAnalysis\\\\canvas-design\" \"C:\\\\Personal\\\\MyGitHubRepos\\\\BuildAndSellWithClaudeCode\\\\YouTubeAnalysis\\\\.claude\\\\skills\\\\canvas-design\")",
-      "Bash(find C:PersonalMyGitHubReposBuildAndSellWithClaudeCode -name AIS_Logo.png -o -name *.png)"
+      "Bash(find C:PersonalMyGitHubReposBuildAndSellWithClaudeCode -name AIS_Logo.png -o -name *.png)",
+      "Bash(find C:/Personal/MyGitHubRepos/BuildAndSellWithClaudeCode -name *YouTubeAnalysis* -o -path *YouTubeAnalysis*)",
+      "Bash(PYTHONUTF8=1 python -m modal deploy modal_app.py)",
+      "Bash(PYTHONUTF8=1 python -c \"import modal; print\\([x for x in dir\\(modal\\) if 'ount' in x or 'local' in x.lower\\(\\) or 'dir' in x.lower\\(\\)]\\)\")",
+      "Bash(PYTHONUTF8=1 python -c \"import modal; help\\(modal.mount\\)\")",
+      "Bash(PYTHONUTF8=1 python -c \":*)",
+      "Bash(PYTHONUTF8=1 python -m modal run modal_app.py)",
+      "WebFetch(domain:www.bfv.de)",
+      "WebFetch(domain:github.com)"
     ]
   }
 }

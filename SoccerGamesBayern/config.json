@@ -1,0 +1,7 @@
+{
+  "email_recipient": "bartvanhoey@hotmail.com",
+  "email_subject_template": "BFV Upcoming Matches — {date}",
+  "sender_name": "BFV Match Bot",
+  "leagues": ["Kreisliga", "Bezirksliga"],
+  "lookahead_days": 14
+}

@@ -1,5 +1,29 @@
 # Prompts
 
+SoccerGamesBayern Project Setup
+
+```bash
+    hey Claude, read the CLAUDE.md file in the SoccerGamesBayern folder and then set up the project and the structure in the SoccerGamesBayern folder, and then we will start building workflows together. If you have any questions about the project or the structure, ask me before you start building anything.
+```
+
+```bash
+hey Claude, I need you help building an automation.
+I want this automation to basically scrape the https://www.bfv.de/ website to find the upcomingen matches in the next to weeks
+
+I want you that you list me all the upcoming matches in the next two weeks. 
+The data I want you to collect is the the Date, the Start Time, the Home Team, the Visitor Team and the location of the game
+
+I need you help understanding how we can actually get this data. 
+
+Also let me know if there are any skills that would be helpful because after you've done your research,
+what I want you to do, is I want you to create a google sheet for me with all these data
+
+So I want to get an actual deliverable (a google sheet) that will be sent to my email using Gmail.
+
+So, that's what i've got. Let me know if you have any questions,
+ or if you have any recommendations for things that I haven't thought of about this automation system.
+ ```
+
 ## YouTubeAnalysis Project Setup
 
 ```bash
