@@ -37,7 +37,31 @@
       "Bash(PYTHONUTF8=1 python -c \":*)",
       "Bash(PYTHONUTF8=1 python -m modal run modal_app.py)",
       "WebFetch(domain:www.bfv.de)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "Bash(find C:/Personal/MyGitHubRepos/BuildAndSellWithClaudeCode/YouTubeAnalysis -type f -name *.py -o -name .env* -o -name .gitignore -o -name credentials.json -o -name config.json -o -name token.json)",
+      "Bash(grep:*)",
+      "Bash(chmod +x \"C:/Personal/MyGitHubRepos/BuildAndSellWithClaudeCode/.git/hooks/pre-commit\")",
+      "WebFetch(domain:developers.google.com)",
+      "WebFetch(domain:www.yelp.com)",
+      "WebFetch(domain:wiki.openstreetmap.org)",
+      "WebFetch(domain:data.cms.gov)",
+      "WebFetch(domain:www.nppes.cms.hhs.gov)",
+      "WebFetch(domain:npi.cms.hhs.gov)",
+      "WebFetch(domain:hunter.io)",
+      "WebFetch(domain:api.yelp.com)",
+      "WebFetch(domain:overpass-api.de)",
+      "WebFetch(domain:npiregistry.cms.hhs.gov)",
+      "WebFetch(domain:clinicaltables.nlm.nih.gov)",
+      "WebFetch(domain:outscraper.com)",
+      "Bash(curl -s -H \"Authorization: pk_290504304_3ILY09HV449HDHXHIWF0JUVSWWTFY8N0\" \"https://api.clickup.com/api/v2/team\")",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl:*)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npx:*)",
+      "Read(//c/Users/VanhoeyB/.config/trigger/**)",
+      "Read(//c/Users/VanhoeyB/AppData/Roaming/trigger/**)",
+      "Read(//c/Users/VanhoeyB/**)"
     ]
   }
 }

@@ -1,6 +1,21 @@
 # Prompts
 
-SoccerGamesBayern Project Setup
+## ClaudeCodeWorkflowBuilder Project Setup
+
+```bash
+    hey Claude, read the CLAUDE.md file in the ClaudeCodeWorkflowBuilder folder and then set up the project and the structure in the ClaudeCodeWorkflowBuilder folder, and then we will start building workflows together. If you have any questions about the project or the structure, ask me before you start building anything.
+```
+
+```bash
+hey Claude, you are in the ClaudeCodeWorkflowBuilder folder and I need you to build an automation that's gonna go off every single Monday and it's gonna search the web and gonna find me leads. It's gonna find me dental practices that I can sell web sites to.
+```
+
+
+
+
+
+
+## SoccerGamesBayern Project Setup
 
 ```bash
     hey Claude, read the CLAUDE.md file in the SoccerGamesBayern folder and then set up the project and the structure in the SoccerGamesBayern folder, and then we will start building workflows together. If you have any questions about the project or the structure, ask me before you start building anything.
@@ -31,6 +46,9 @@ So, that's what i've got. Let me know if you have any questions,
 ```
 
 ```bash
+
+# PLAN MODE
+
    hey Claude, I need you help building an automation.
 I want this automation to basically scrape tons of YouTube videos and YouTube channels in my niche which is AI and AI Automation.
 
@@ -50,6 +68,12 @@ So, that's what i've got. Let me know if you have any questions,
 ```
 
 ```bash
+# PLAN MODE
+I want you to run a security review to make sure my API keys and credentials are not being exposed in any of the code or in any of the tools that we have built. I want you to make sure that all of the credentials are stored in the .env file and that they are being accessed securely in the code. If you find any issues, please let me know and help me fix them.
+```
+
+```bash
+# PLAN MODE
 hey Claude, so I just gave you a skill for Canvas Design, and instead of outputting a Powerpoint presentation, 
 I want you to now take the same research when you do your analysis from YouTube videos, 
 but I want you to use that Canvas Design skill to create a PDF. 

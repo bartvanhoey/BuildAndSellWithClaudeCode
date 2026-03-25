@@ -1,0 +1,17 @@
+# Safety net — secrets that must never be committed from any sub-project
+.env
+credentials.json
+token.json
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+.tmp/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Node artifacts
+ClaudeCodeWorkflowBuilder/node_modules/

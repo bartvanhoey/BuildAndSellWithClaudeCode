@@ -1,0 +1,26 @@
+{
+  "configPath": "C:\\Personal\\MyGitHubRepos\\BuildAndSellWithClaudeCode\\ClaudeCodeWorkflowBuilder\\.trigger\\tmp\\build-Q9GXls\\Personal\\MyGitHubRepos\\BuildAndSellWithClaudeCode\\ClaudeCodeWorkflowBuilder\\trigger.config.mjs",
+  "customConditions": [
+  ],
+  "queues": [
+  ],
+  "runtime": "node",
+  "runtimeVersion": "22.14.0",
+  "tasks": [
+    {
+      "entryPoint": "C:\\Personal\\MyGitHubRepos\\BuildAndSellWithClaudeCode\\ClaudeCodeWorkflowBuilder\\.trigger\\tmp\\build-Q9GXls\\Personal\\MyGitHubRepos\\BuildAndSellWithClaudeCode\\ClaudeCodeWorkflowBuilder\\src\\trigger\\dental-leads\\find-dental-leads.mjs",
+      "filePath": "src/trigger/dental-leads/find-dental-leads.ts",
+      "id": "find-dental-leads",
+      "maxDuration": 600,
+      "schedule": {
+        "cron": "0 8 * * 1",
+        "timezone": "UTC"
+      },
+      "triggerSource": "schedule"
+    }
+  ],
+  "timings": {
+    "src/trigger/dental-leads/find-dental-leads.ts": 13.796100000000024
+  },
+  "workerEntryPoint": "C:\\Personal\\MyGitHubRepos\\BuildAndSellWithClaudeCode\\ClaudeCodeWorkflowBuilder\\.trigger\\tmp\\build-Q9GXls\\Users\\VanhoeyB\\AppData\\Local\\npm-cache\\_npx\\f51a09bd0abf5f10\\node_modules\\trigger.dev\\dist\\esm\\entryPoints\\dev-run-worker.mjs"
+}
